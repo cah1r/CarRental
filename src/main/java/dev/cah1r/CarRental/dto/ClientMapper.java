@@ -4,7 +4,7 @@ import dev.cah1r.CarRental.model.Client;
 
 import java.util.stream.Collectors;
 
-class ClientMapper {
+public class ClientMapper {
 
     public static ClientDto toDto(Client client) {
 
