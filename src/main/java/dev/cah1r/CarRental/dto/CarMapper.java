@@ -4,7 +4,7 @@ import dev.cah1r.CarRental.model.Car;
 
 public class CarMapper {
 
-    public static CarDto carDto(Car car) {
+    public static CarDto toDto(Car car) {
         return CarDto.builder()
                 .id(car.getId())
                 .brand(car.getBrand())
