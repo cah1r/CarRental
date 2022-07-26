@@ -1,12 +1,9 @@
 package dev.cah1r.CarRental.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
-import java.time.Instant;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -14,14 +11,15 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
+@Setter
 public class Rent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Instant startDate;
-    private Instant endDate;
+    private LocalDate startDate;
+    private LocalDate endDate;
     private Integer rentDays;
 
     @Enumerated(EnumType.STRING)

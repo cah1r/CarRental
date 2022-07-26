@@ -23,6 +23,11 @@ public class RentController {
         return rentService.rent(rentRequest);
     }
 
+    @PostMapping("/end")
+    public boolean endRent(@RequestBody EndRentRequest endRentRequest) {
+        return rentService.endRent(endRentRequest);
+    }
+
     @Value
     @ToString
     public static class RentRequest {
@@ -30,7 +35,13 @@ public class RentController {
         List<Long> carIds;
         LocalDate startDate;
         Rent.Type type;
-        Integer days;
+        Integer rentDays;
+    }
+
+    @Value
+    public static class EndRentRequest {
+        Long rentId;
+        String branchCity;
     }
 
 }

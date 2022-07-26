@@ -93,7 +93,7 @@ class InitDatabaseService {
                 .availableCars(new ArrayList<>())
                 .build();
         Car ford = Car.builder()
-                .brand("Fard Focus RS")
+                .brand("Ford Focus RS")
                 .currentBranch(warszawa)
                 .originBranch(warszawa)
                 .type(Car.Type.B)
