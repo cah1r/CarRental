@@ -1,2 +1,2 @@
 # Car Rental
-Spring application for car renting for REST training purposes.
+Car renting spring application for REST training purpose.
